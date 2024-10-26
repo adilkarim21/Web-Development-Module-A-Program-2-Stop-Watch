@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+</head>
+<style>
+    body{
+        background: rgb(105,9,121);
+        background: linear-gradient(90deg, rgba(105,9,121,1) 0%, rgba(255,0,172,1) 50%, rgba(0,212,255,1) 100%);
+        text-align: center;
+    }
+
+    .timing{
+        color: black;
+        width: 160px;
+        padding: 3px;
+        font-size: 50px;
+        display: inline-block;
+    }
+
+    button{
+        font-size: 25px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 7px;
+        background: rgba(255,0,172,1);
+    }
+    .h1{
+        color: black;
+        text-decoration: underline;
+        padding: 8px;
+        font-size: 60px;
+        display: inline-block;
+    }
+    .gap{
+        display: inline-block;
+        color: black;
+        font-size: 45px;
+    }
+</style>
+<body>
+    <br><br>
+    <div>
+        <h1 class="h1">Stop Watch</h1>
+    </div>
+    <div>
+        <h1 class="timing" id="hour">0</h1>
+        <h1 class="gap">:</h1>
+        <h1 class="timing" id="min">0</h1>
+        <h1 class="gap">:</h1>
+        <h1 class="timing" id="sec">0</h1>
+        <h1 class="gap">:</h1>
+        <h1 class="timing" id="msec">0</h1>
+    </div>
+    <br><br>
+    <div>
+        <button id="startBtn" onclick="start()">&nbsp;Start&nbsp;</button>
+        <button onclick="pause()">&nbsp;Stop&nbsp;</button>
+        <button onclick="reset()">&nbsp;Reset&nbsp;</button>
+    </div>
+</body>
+    <script src="app.js"></script>
+</html>
